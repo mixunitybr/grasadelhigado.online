@@ -117,15 +117,31 @@
 <button class="btn" onclick="terceira()">NO</button>
 </div>
 </div>
+<div id="terceira" class="hide">
+<div class="question">
+<h1>Pregunta 3</h1>
+<p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o fim?</p>
+</div>
+<div class="answer">
+<button class="btn" onclick="redirect()">SÍ</button>
+<button class="btn" onclick="redirect()">NO</button>
+</div>
+</div>
+</div>
 <p style="text-align: center; font-weight: bold;">© 2022 – Todos los derechos reservados. Este sitio no es parte ni está respaldado por Facebook. Facebook es una marca comercial de Facebook, Inc.</p>
-</div>
-</div>
+</div></p>
 </div>
 <script>
+    function segunda() {
+      document.getElementById("primeira").classList.add("hide")
+      document.getElementById("segunda").classList.remove("hide")
+    }
+    function terceira() {
+      document.getElementById("segunda").classList.add("hide")
+      document.getElementById("terceira").classList.remove("hide")
+    }
     function redirect() {
       location.href = "https://grasadelhigado.online/"
-
-    }
   </script>
 </body>
 </html>
